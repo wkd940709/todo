@@ -3,51 +3,101 @@ import './App.css';
 import { useState } from 'react';
 
 function App() {
-  let [inputTitle] = useState();
+  let [던캔슬,던캔슬ch] = useState('DONE');
   let [inputContents] = useState();
   return (
     
     <div className="App">
       <h1 className="header">Todo-List</h1>
       <div className="inputBox">
-        <div className="firstLine">
-          <div>
-            title
-          </div>
-          <div>
-            contents
-          </div>
+        <div className="title">
+          <h2>Title</h2>
+          <input type="text" className="title"></input>
         </div>
-        <div className="secondLine">  
-          <div className="topTitle">
-            <input 
-              className="titleInput" 
-              type="text"
-              value={inputTitle}
-            ></input>
-          </div>
-          <div className="topContents">
-            <input 
-                className="contentsInput" 
-                type="text"
-                value={inputContents}
-              ></input>
-          </div>
-          <button className="addButton">add</button>
+        <div className="contents">
+          <h2>Contents</h2>
+          <input type="text" className="contents"></input>
         </div>
-
-       
-
+        <div className="add">
+          
+          <button className="addButton">ADD</button>
+        </div>
       </div>
-      <div className="bottom">
-        <div>box1</div>
-        <div>box2</div>
-        <div>box3</div>
-        <div>box4</div>
-        <div>box5</div>
-        <div>box6</div>
-        <div>box7</div>
-        <div>box8</div>
+
+      <div className="listBox">
+        <div className="item">
+          <div>
+            <div className="check"></div>
+          </div>
+          <div className="본문">
+            <h3>뽀미 산책</h3>
+            <p>30분 이상..!</p>
+          </div>
+          <div>
+            <button className="delete">
+              DELETE
+            </button>
+            <button className="done" onClick={() => {던캔슬ch('CANCEL')}}>
+              {던캔슬}
+            </button>
+          </div>
+        </div>
+
+        <div className="item">
+          <div>
+            <div className="check"></div>
+          </div>
+          <div className="본문">
+            <h3>야채먹기</h3>
+            <p>싸밥먹고싶다</p>
+          </div>
+          <div>
+            <button className="delete">
+              DELETE
+            </button>
+            <button className="done">
+              DONE
+            </button>
+          </div>
+        </div>
+
+        <div className="item">
+          <div>
+            <div className="check"></div>
+          </div>
+          <div className="본문">
+            <h3>운동</h3>
+            <p>아침6시에 인나서 하고가기</p>
+          </div>
+          <div>
+            <button className="delete">
+              DELETE
+            </button>
+            <button className="done">
+              DONE
+            </button>
+          </div>
+        </div>
+        
+        <div className="item">
+          <div>
+            <div className="check"></div>
+          </div>
+          <div className="본문">
+            <h3>일찍 자기</h3>
+            <p>자기 전에 유튜브 안 보기!</p>
+          </div>
+          <div>
+            <button className="delete">
+              DELETE
+            </button>
+            <button className="done">
+              DONE
+            </button>
+          </div>
+        </div>
+
+        
         
       </div>
     </div>

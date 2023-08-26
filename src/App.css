@@ -8,73 +8,111 @@
   font-style: oblique;
   margin: 0;
 }
-.top {
+.inputBox {
   width:80%;
   height:20%;
   background-color:white;
   border: 1px solid;
   border-radius: 10px;
   border-color: grey;
-  margin: 20px;
-  /* display: flex; */
-  /* flex-direction: row; */
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 3px 3px 3px grey;
 }
-.firstLine div{
-  display: inline-block;
+.inputBox input, button {
+  height: 20px;
+  border-radius: 5px;
+}
+.title {
   width: 150px;
-  height: 30px;
-  border: none;
-  margin: 10px;
+}
+.contents {
+  width: 300px;
+}
+.title {
+  /* width: 100px; */
+}
+.inputBox div {
+  display: inline-block;
+  margin: 5px;
+}
+.inputBox input {
+  border: solid grey 1px;
+  /* margin: 10px; */
+}
+.inputBox h2 {
   color: grey;
-  font-size: 30px;
-}
-.secondLine div,button{
-  display: inline-block;
-  width: 150px;
-  height: 70px;
-  border: 1px solid grey;
-  border-radius: 10px;
-  margin: 20px;
-
-  /* flex-direction: row; */
-}
-.topTitle {
-  /* margin: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center; */
-}
-.topContents {
-  /* margin: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center; */
+  font-size: 15px;
+  text-align: left;
+  margin: 0px;
 }
 .addButton {
-  position: absolute;
+  color: white;
   background-color: skyblue;
-  color: #fff;
+  size: 20px;
+  border: none;
   
-  border:none; 
-  border-radius:10px; 
-  /* padding:15px; */
-  /* min-height:30px;  */
-  /* min-width: 120px; */
 }
-.bottom {
-  width:80%;
-  height:20%;
-  margin: 20px;
-  /* display: flex; */
-  /* flex-direction: row; */
+.listBox {
+  /* width: 80%;
+  height: 20%; */
+  justify-content: flex-start;
 }
-.bottom div{
+.listBox .item {
+  
   display: inline-block;
-  width: 100px;
-  height: 100px;
-  margin: 5px;
-  border: 1px solid;
+  margin: 10px;
+  box-shadow: 3px 3px 3px grey;
+  
 }
+.listBox h3, p {
+  text-align: left;
+}
+.listBox p {
+  font-size: 10px;
+}
+.listBox input {
+  margin: 0 auto;
+}
+.item {
+  width: 180px;
+  height: 200px;
+  border: grey solid 1px;
+  border-radius: 10px;
+}
+.check {
+  width: 12px;
+  height: 12px;
+  border: 1px solid grey;
+  margin: 10px;
+}
+.item h3 {
+  margin: 15px;
+}
+.item h3, p{
+  margin-left: 10px;
+}
+.item button {
+  display: inline-block;
+  color: white;
+  margin: 5px;
+  border: none;
+  width: 70px;
+  height: 20px;
+  font-size: 15px;
+}
+.본문 {
+  height: 130px;
+  /* background-color:; */
+}
+.delete {
+  background-color: orangered;
+}
+.done {
+  background-color: lime;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
