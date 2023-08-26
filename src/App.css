@@ -1,42 +1,80 @@
 .App {
   text-align: center;
 }
-.title {
+.header {
   background-color: skyblue;
   color: white;
   font-size: 50px;
   font-style: oblique;
   margin: 0;
 }
-.insertBox {
-  width:450px;
-  height:150px;
+.top {
+  width:80%;
+  height:20%;
   background-color:white;
   border: 1px solid;
-  margin-left: 100px;
-  margin-top: 50px;
-  display: flex;
-  flex-direction: row;
+  border-radius: 10px;
+  border-color: grey;
+  margin: 20px;
+  /* display: flex; */
+  /* flex-direction: row; */
 }
-.insertBoxTitle {
+.firstLine div{
+  display: inline-block;
+  width: 150px;
+  height: 30px;
+  border: none;
+  margin: 10px;
+  color: grey;
+  font-size: 30px;
+}
+.secondLine div,button{
+  display: inline-block;
   width: 150px;
   height: 70px;
-  border: 1px solid black;
-  margin: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.insertBoxContents {
-  width: 150px;
-  height: 70px;
-  border: 1px solid black;
-  margin: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin: 20px;
 
+  /* flex-direction: row; */
+}
+.topTitle {
+  /* margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.topContents {
+  /* margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.addButton {
+  position: absolute;
+  background-color: skyblue;
+  color: #fff;
+  
+  border:none; 
+  border-radius:10px; 
+  /* padding:15px; */
+  /* min-height:30px;  */
+  /* min-width: 120px; */
+}
+.bottom {
+  width:80%;
+  height:20%;
+  margin: 20px;
+  /* display: flex; */
+  /* flex-direction: row; */
+}
+.bottom div{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  border: 1px solid;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
