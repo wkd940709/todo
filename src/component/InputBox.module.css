@@ -1,0 +1,52 @@
+.inputBox {
+    width:80%;
+    min-width: 300px;
+    height:20%;
+    background-color:white;
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: grey;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 3px grey;
+}
+.inputBox input, button {
+    height: 20px;
+    border-radius: 5px;
+}
+.title {
+    width: 10%;
+}
+.contents {
+    width: 60%;
+}
+  
+.add {
+    width: 10%;
+}
+.title {
+    /* width: 100px; */
+}
+.inputBox div {
+    display: inline-block;
+    margin: 5px;
+}
+.inputBox input {
+    border: solid grey 1px;
+    width: 100%;
+    /* margin: 10px; */
+}
+.inputBox h2 {
+    color: grey;
+    font-size: 15px;
+    text-align: left;
+    margin: 0px;
+}
+.addButton {
+    color: white;
+    background-color: skyblue;
+    size: 20px;
+    border: none;
+    width:100%
+}
