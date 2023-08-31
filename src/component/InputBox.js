@@ -27,7 +27,9 @@ export default function InputBox({title, setTitle, contents, setContents, addTod
         <div className={styles.add}>
           <button 
             className={styles.addButton}
-            onClick={addTodo}>ADD</button>
+            onClick={addTodo}
+            // onKeyDown={handleKeyPress}
+            >ADD</button>
         </div>
       </div>
     );
